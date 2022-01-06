@@ -1,0 +1,399 @@
+@font-face{
+	font-family: scholar;
+	src: url(../fonts/Scholar1.otf);
+}
+
+@keyframes melon{
+	0%{
+		color:#d4f5a4;
+	}
+	29%{
+		color: #8ede3e;
+	}
+	59%{
+		color: #33c210;
+	}
+	87%{
+		color: #c5e302;
+	}
+	100%{
+		color:#d4f5a4;
+	}
+}
+
+@keyframes pink{
+	0%{
+		color:#ffbadd;
+		background-color: white;
+	}
+	29%{
+		color: #ffbaf7;
+		background-color: white;
+	}
+	59%{
+		color: #ff3bb7;
+		background-color: white;
+	}
+	87%{
+		color: #ff3bf2;
+		background-color: white;
+	}
+	100%{
+		color:#ffbadd;
+		background-color: white;
+	}
+}
+
+@keyframes list{
+	0%{
+		background-color:#d4f5a4;
+	}
+	29%{
+		background-color: #8ede3e;
+	}
+	59%{
+		background-color: #33c210;
+	}
+	87%{
+		background-color: #c5e302;
+	}
+	100%{
+		background-color:#d4f5a4;
+	}
+}
+
+@keyframes shadow{
+	0%{
+		text-shadow: -30px 30px 3px #ff78f4;
+		z-index: 1;
+	}
+	25%{
+		text-shadow: 30px 30px 3px #ffcf57;
+		z-index: 1;
+	}
+	50%{
+		text-shadow: 30px -30px 3px #63ffb6;
+		z-index: 1;
+	}
+	75%{
+		text-shadow: -30px -30px 3px #8f75ff;
+		z-index: 1;
+	}
+	100%{
+		text-shadow: -30px 30px 3px #ff78f4;
+		z-index: 1;
+	}
+}
+
+@keyframes head {
+
+	0%{
+		transform: rotate(20deg);
+			}
+
+	51%{
+		transform: rotate(-20deg);
+	}
+
+	100%{
+		transform: rotate(19.6deg);
+	}
+}
+
+html{
+	animation-name: list;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	height: 100%
+}
+
+body{
+	background-color: white;
+	height: 98%;
+}
+
+h1{
+	font-family: scholar;
+	line-height: 42px;
+}
+
+h2{
+	font-family: scholar;
+	line-height: 30px;
+	text-align: center;
+}
+
+h3{
+	font-family: scholar;
+	line-height: 10px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+h4{
+	padding-left: 25px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+p{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+a, a:visited{
+	text-decoration:inherit;
+	color: inherit;
+}
+
+a:hover{
+	animation-name: melon;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+iframe{
+	position: 
+}
+
+#intro{
+	display: absolute ;
+	padding-top:20px;
+	padding-left: 40px;
+	width: 100px;
+	text-shadow:-30px 20px 3px lightgray;
+	z-index: 2;
+}
+
+#intro a:hover{
+	animation-name: melon;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+#mid{
+	padding-top: 30px;
+	max-width:400px;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	animation-name: shadow;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	z-index: 2s;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 30px;
+  padding:0px;
+  width: 150px;
+  font-family: scholar;
+  line-height: 30px;
+  background-color: white;
+}
+
+li {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: white;
+  text-shadow: -10px 7px 3px lightgray; 
+}
+
+/* Change the link color on hover */
+li a:hover {
+  animation-name: list;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  color: white;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.active {
+	animation-name: pink;
+	animation-duration: 5s;
+  	animation-iteration-count: infinite;
+  	font-size:18px;
+  	padding-left: 30px;
+  	text-shadow: -10px 7px 3px gray;
+}
+
+.active a:hover{
+	animation-name: pink;
+	animation-duration: 5s;
+  	animation-iteration-count: infinite;
+  	padding-left: 0px;
+}
+
+#nav{
+	position: absolute;
+}
+
+.bottom{
+	position: absolute;
+	bottom: 25px;
+	right:20px;
+	font-family: scholar;
+	color: gray;
+}
+
+.head{
+	border-radius: 50%;
+	width: 150px;
+	position: absolute;
+	z-index: 1;
+	left: 85%;
+	top: 20px;
+	animation-duration: 10s;
+	animation-name: head;
+	animation-iteration-count: infinite;
+}
+
+.head:hover{
+	left: 85%;
+	top: 20px;
+}
+
+#cv{
+	height: 60%;
+	width: 50%;
+	border-style: inset;
+	border-width: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: lightpink;
+	overflow: auto;
+}
+
+#header{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	text-align: center;
+}
+
+#writing{
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: 50% 50%;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	width: 60%;
+	height: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.line{
+	line-height:0px;
+	color: hotpink;
+	font-size: 14px;
+}
+
+.item{
+	overflow: auto;
+	border-style: inset;
+	border-width: 3px;
+	border-color: lightpink;
+}
+
+#form{
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 10px;
+	background-color:white; 
+}
+
+#vids{
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: 50% 50%;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	height: 60%;
+	width: 60%;
+	border-style: inset;
+	border-width: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: lightpink;
+	overflow: auto;
+}
+
+.thumbnail{
+	position: relative;
+	width: 75%;
+}
+
+#pots{
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	width: 65%;
+	height: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: lightpink;
+	overflow: auto;
+}
+
+.beep{
+	position: relative;
+	display:grid;
+}
+
+.potpic{
+	display: block;
+	width: 95%;
+	height: auto;
+	padding:5px;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+ 	right: 0;
+ 	height: calc(100% + 10px);
+	width: 95%;
+ 	opacity: 0;
+  	transition: .5s ease;
+  	background-color: #4aff7a;
+  	margin:5px;	
+}
+
+.beep:hover .overlay {
+  opacity: .9;
+}
+
+.text {
+  color: black;
+  font-family: scholar;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
